@@ -37,12 +37,12 @@ Este projeto é um gerenciador de tarefas desenvolvido em **C** como parte do tr
 
 1. **Compilar o código:**
    ```bash
-   gcc -o gerenciadorTarefas gerenciadorTarefas.c
+   gcc -o Codigo Codigo.c
    ```
 
 2. **Executar o programa:**
    ```bash
-   ./gerenciadorTarefas
+   ./Codigo.c
    ```
 
 3. Siga as instruções no menu interativo para adicionar tarefas, concluí-las, verificar tarefas pendentes ou concluídas, e ver o XP total.
