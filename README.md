@@ -5,7 +5,56 @@
 
 Este projeto é um gerenciador de tarefas desenvolvido em **C** como parte do trabalho da disciplina **INF0063 - AED1 (Algoritmos e Estruturas de Dados I)**. O sistema permite que o usuário adicione tarefas, acompanhe o progresso e registre as tarefas concluídas, além de calcular o **XP** ganho ao completar as tarefas. A implementação utiliza estruturas de dados como **fila** e **lista encadeada** para gerenciar as tarefas pendentes e concluídas.
 
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .centralizar-imagem {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="centralizar-imagem">
+    <img src="https://amhandmade.pt/cdn/shop/files/IMG_5474.jpg?v=1695566664&width=1445" alt="Logo do projeto" width="500" height="auto" />
+</div>
+
+</body>
+</html>
+
+
+
+
+
 ## Funcionalidades
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .centralizar-imagem {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="centralizar-imagem">
+    <img src="https://midias.siteware.com.br/wp-content/uploads/2019/05/25081155/dicas-gestao-projetos.jpg" alt="Logo do projeto" width="400" height="auto" />
+</div>
+
+</body>
+</html>
+
+#
 
 - **Adicionar Tarefas:** O usuário pode adicionar tarefas com uma descrição e tempo estimado para a sua execução.
 - **Exibir Tarefas Pendentes:** Lista todas as tarefas ainda não concluídas.
