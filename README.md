@@ -1,7 +1,9 @@
 
 # Gerenciador de Tarefas - Trabalho de Estruturas de Dados
 
-## Descrição
+## Introdução
+
+### Descrição
 
 Este projeto é um gerenciador de tarefas desenvolvido em **C** como parte do trabalho da disciplina **INF0063 - AED1 (Algoritmos e Estruturas de Dados I)**. O sistema permite que o usuário adicione tarefas, acompanhe o progresso e registre as tarefas concluídas, além de calcular o **XP** ganho ao completar as tarefas. A implementação utiliza estruturas de dados como **fila** e **lista encadeada** para gerenciar as tarefas pendentes e concluídas.
 
@@ -29,9 +31,9 @@ Este projeto é um gerenciador de tarefas desenvolvido em **C** como parte do tr
 
 
 
+## Metodologia
 
 ## Funcionalidades
-
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -68,13 +70,13 @@ Este projeto é um gerenciador de tarefas desenvolvido em **C** como parte do tr
 - **Fila:** Utilizada para armazenar as tarefas pendentes. A fila segue a estrutura **FIFO** (First In, First Out), onde a tarefa que é adicionada primeiro será a primeira a ser concluída.
 - **Lista Encadeada:** Utilizada para armazenar as tarefas concluídas. Cada tarefa concluída é inserida no início da lista.
 
-## Estrutura do Código
+### Estrutura do Código
 
 - **Tarefa:** Estrutura que armazena os dados de cada tarefa, como descrição, XP, tempo estimado, tempo real e ponteiro para a próxima tarefa.
 - **Fila:** Estrutura que mantém as tarefas pendentes. Contém ponteiros para o início (frente) e fim (traseira) da fila.
 - **ListaConcluidas:** Estrutura que mantém as tarefas concluídas, com um ponteiro para o início da lista.
 
-## Como Usar
+### Como Usar
 
 1. **Adicionar Tarefas:** O programa pede ao usuário a descrição da tarefa e o tempo estimado para sua execução.
 2. **Exibir Tarefas Pendentes:** Mostra todas as tarefas pendentes, incluindo descrição, XP acumulado, tempo estimado e tempo real.
@@ -82,7 +84,7 @@ Este projeto é um gerenciador de tarefas desenvolvido em **C** como parte do tr
 4. **Exibir Tarefas Concluídas:** Exibe uma lista das tarefas concluídas com o tempo real dedicado e o XP acumulado.
 5. **Ver XP Total:** Mostra o total de XP acumulado até o momento.
 
-## Como Compilar e Executar
+### Como Compilar e Executar
 
 1. **Compilar o código:**
    ```bash
@@ -96,7 +98,7 @@ Este projeto é um gerenciador de tarefas desenvolvido em **C** como parte do tr
 
 3. Siga as instruções no menu interativo para adicionar tarefas, concluí-las, verificar tarefas pendentes ou concluídas, e ver o XP total.
 
-## Exemplo de Saída
+### Exemplo de Saída
 
 ```
 1. Adicionar Tarefa
@@ -116,9 +118,9 @@ Deseja adicionar outra tarefa? (s/n): n
 
 ## Equipe
 
-- **Thiago Honorato Ferreira**
-- **Ana Clara Fortunado de Souza**
-- **Layssa Ribeiro Abreu Peres**
+- **202302520 - Ana Clara Fortunado de Souza**
+- **202201646 - Layssa Ribeiro Abreu Peres**
+- **202206139 - Thiago Honorato Ferreira**
 
 ## Licença
 
