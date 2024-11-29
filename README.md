@@ -9,6 +9,67 @@ Este projeto é um gerenciador de tarefas desenvolvido em **C** como parte do tr
 
 ![img](https://amhandmade.pt/cdn/shop/files/IMG_5474.jpg?v=1695566664&width=1445)
 
+---
+
+## Fundamentos Teóricos
+
+### Estruturas de Dados Utilizadas
+
+   - Fila de Tarefas Pendentes (Queue):
+      * A fila é utilizada para armazenar as tarefas que ainda não foram concluídas, seguindo o conceito de FIFO (First In, First Out). Novas tarefas são adicionadas ao final da fila, e a conclusão remove tarefas do início.
+      * Implementação: Cada tarefa é representada como um nó da estrutura, com ponteiros que conectam os nós consecutivamente.
+
+   - Lista de Tarefas Concluídas:
+      * A lista ligada é usada para armazenar tarefas já concluídas, com inserção de novas tarefas no início da lista (ordem LIFO - Last In, First Out). Cada nó aponta para o próximo elemento na lista.
+
+### Mecanismos e Algoritmos
+
+   - Adição de Tarefas à Fila:
+      * O método *adicionarTarefaFila* verifica se a tarefa já existe (para evitar duplicatas) usando o algoritmo de busca linear, comparando a descrição da nova tarefa com as existentes.
+      * Caso a tarefa seja única, ela é alocada dinamicamente e inserida na fila.
+
+   - Exibição das Tarefas:
+      * As funções *exibirTarefas* e *exibirTarefasConcluidas* iteram pelas estruturas de dados e formatam os dados das tarefas em uma tabela organizada.
+      * Esse recurso melhora a visualização, fundamental para monitorar progresso.
+
+   - Conclusão de Tarefas:
+      * O método *concluirTarefa* permite ao usuário selecionar uma tarefa por meio de um índice, com base na listagem atual.
+      * Após a conclusão:
+         * Atualiza-se o tempo real dedicado à tarefa.
+         * O sistema calcula o XP ganho (1 XP para cada 10 minutos de trabalho).
+         * A tarefa é removida da fila e inserida na lista de tarefas concluídas.
+
+   - XP Total:
+      * O cálculo do XP total acumulado considera as tarefas concluídas e é armazenado em uma variável global compartilhada.
+
+   - Gerenciamento de Memória:
+      * O código utiliza funções como *malloc* e *free* para gerenciar a memória dinamicamente. Isso permite a criação e remoção de tarefas sem desperdício de memória.
+
+### Avaliação da Solução
+A avaliação do sistema pode ser feita com base nas seguintes métricas:
+   - Funcionalidade:
+      * Verificar se as operações básicas (adicionar, concluir e exibir tarefas) funcionam conforme esperado.
+      * Testar cenários de erro, como inserção de tarefas duplicadas ou escolha de tarefas inexistentes.
+   - Desempenho:
+      * Avaliar a eficiência dos algoritmos usados para manipulação de tarefas, especialmente a busca linear para verificar duplicatas e o gerenciamento da fila.
+      * Considerar o tempo de execução em cenários com muitas tarefas.
+   - Utilização de Recursos:
+      * Garantir que a memória alocada é liberada adequadamente para evitar _memory leaks_.
+      * Analisar o consumo de memória com ferramentas específicas.
+   - Usabilidade:
+      * Testar a interface com o usuário, validando se as mensagens e fluxos são claros.
+      * Observar a facilidade de navegação entre as opções do menu.
+   - Escalabilidade:
+      * Medir o comportamento do sistema com volumes crescentes de tarefas pendentes e concluídas.
+
+### Forma de Avaliação
+Para validar e melhorar a solução, podem ser aplicadas as seguintes estratégias:
+   - **Testes unitários**: Validar individualmente cada função (e.g., *adicionarTarefaFila*, *concluirTarefa*).
+   - **Cenários de uso reais**: Simular casos típicos e extremos de uso, como adicionar uma grande quantidade de tarefas.
+   - **Ferramentas de monitoramento**: Utilizar ferramentas como Valgrind para verificar vazamentos de memória e depurar o uso de ponteiros.
+   - **Feedback de usuários**: Coletar opiniões sobre a experiência e possíveis melhorias.
+
+---
 
 ## Metodologia
 
