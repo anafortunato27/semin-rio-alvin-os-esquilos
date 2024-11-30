@@ -136,6 +136,10 @@ Digite o tempo estimado dedicado à tarefa (em minutos): 45
 Deseja adicionar outra tarefa? (s/n): n
 ```
 
+## Resultados e Conclusões
+
+Os resultados mostram que o gerenciador de tarefas opera corretamente, com adição, conclusão e exibição funcionando conforme esperado. Em testes simulando 20 tarefas, o XP total foi calculado corretamente, e a exibição foi clara e organizada. Não foram detectados *memory leaks* em testes com o *Valgrind*, garantindo eficiência no uso de memória. Comparado a soluções similares, o sistema se destacou pela simplicidade de uso e clareza. Como lição, aprendemos a importância de validar cenários extremos, usar boas práticas de gerenciamento de memória e estruturar menus intuitivos para a experiência do usuário.
+
 ## Equipe
 
 - **202302520 - Ana Clara Fortunado de Souza**
